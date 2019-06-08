@@ -1,4 +1,5 @@
 public with sharing class ContactAndLeadSearch {
+
   public static List<List<SObject>> searchContactsAndLeads(String name) {
     List<List<SObject>> searchContactsAndLeads = [
       FIND :name
@@ -7,4 +8,5 @@ public with sharing class ContactAndLeadSearch {
     ];
     return searchContactsAndLeads;
   }
+
 }
