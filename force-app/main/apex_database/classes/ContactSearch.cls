@@ -1,5 +1,4 @@
 public with sharing class ContactSearch {
-
   public static List<Contact> searchForContacts(String lastName, String mailingPostalCode) {
     if (!Contact.sObjectType.getDescribe().isAccessible()) {
       return null;
@@ -11,5 +10,4 @@ public with sharing class ContactSearch {
     ];
     return contacts;
   }
-
 }
